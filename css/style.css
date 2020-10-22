@@ -1,0 +1,27 @@
+.home-slider {
+    padding: 0;
+}
+
+.home-slider h5{
+    font-size: 60px;
+}
+
+.home-slider p{
+    font-size: 30px;
+}
+.carousel-caption {
+    bottom: 100px;
+}
+
+.carousel-item {
+    height: 25rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
