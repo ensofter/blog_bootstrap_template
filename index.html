@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Блог. Главная страница!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="my-navigation">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
+          <div class="container-fluid">
+              <a href="#" class="navbar-brand">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="30" height="30" alt="Python">
+              </a>
+              <a href="#" class="navbar-brand">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Nuxt_logo.svg" width="30" height="30" alt="NuxtJS">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                      <a class="nav-link" href="#">Контакты</a>
+                  </div>
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                      <button class="btn btn-outline-success me-2" type="submit">Найти</button>
+                      <button type="button" class="btn btn-outline-light me-2">Вход</button>
+                      <button type="button" class="btn btn-outline-light me-2">Регистрация</button>
+                      <button type="button" class="btn btn-outline-light">Выход</button>
+                  </form>
+            </div>
+          </div>
+      </nav>
+    </section>
+    <section class="my-carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/first_img.jpg" class="d-block w-100" alt="Первая картинка">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Это описание первого слайда</h5>
+              <p>Тут можно писать все что угодно</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/second_img.jpg" class="d-block w-100" alt="Вторая картинка">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Это описание второго слайда</h5>
+              <p>Тут можно писать все что угодно</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/third_img.jpg" class="d-block w-100" alt="Третья картинка">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Это описание третьего слайда</h5>
+              <p>Тут можно писать все что угодно</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="all-posts">
+      <div class="container">
+        <h1 class="my-4 text-center">Последние записи блога</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="img/third_img.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Заголовок</h4>
+                        <p class="card-text">Это краткое описание поста. Это краткое описание поста. Это краткое описание поста. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+                            </div>
+                            <small class="text-muted">22.10.2020</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="img/second_img.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Заголовок</h4>
+                        <p class="card-text">Это краткое описание поста. Это краткое описание поста. Это краткое описание поста. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+                            </div>
+                            <small class="text-muted">21.10.2020</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="img/first_img.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Заголовок</h4>
+                        <p class="card-text">Это краткое описание поста. Это краткое описание поста. Это краткое описание поста. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+                            </div>
+                            <small class="text-muted">20.10.2020</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="img/first_img.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Заголовок</h4>
+                        <p class="card-text">Это краткое описание поста. Это краткое описание поста. Это краткое описание поста. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+                            </div>
+                            <small class="text-muted">19.10.2020</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="img/second_img.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Заголовок</h4>
+                        <p class="card-text">Это краткое описание поста. Это краткое описание поста. Это краткое описание поста. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+                            </div>
+                            <small class="text-muted">18.10.2020</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="img/third_img.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Заголовок</h4>
+                        <p class="card-text">Это краткое описание поста. Это краткое описание поста. Это краткое описание поста. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+                            </div>
+                            <small class="text-muted">17.10.2020</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-pagination">
+      <nav aria-label="Paginate me">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Предыдущая</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Следующая</a>
+            </li>
+        </ul>
+      </nav>
+    </section>
+<section class="my-footer">
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="python" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
+  </symbol>
+  <symbol id="telegram" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+  </symbol>
+</svg>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-sm-12 my-3">
+        <a href="/" class="text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#python"/></svg>
+        </a>
+        <span class="text-body-secondary">&copy; 2023 Агентство по разработке потрясных сайтов на bootstrap, drf и nuxtJS. А это просто наш блог.</span>
+      </div>
+      <div class="col-lg-3 col-sm-12 my-3 d-flex justify-content-end">
+        <ul class="nav list-unstyled">
+          <li class=""><a class="text-body-secondary" href="https://t.me/nord_dron_spb"><svg class="bi" width="24" height="24"><use xlink:href="#telegram"/></svg></a></li>
+          <li class="ms-2"><a class="text-end" href="#">Наверх</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

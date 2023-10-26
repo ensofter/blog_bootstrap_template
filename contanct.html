@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Регистрация</title>
+    <title>Форма обратной связи</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -23,21 +23,31 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="navbar-nav me-auto mb-2 mb-lg-0">
                         <a class="nav-link" aria-current="page" href="#">Главная</a>
-                        <a class="nav-link" href="#">Контакты</a>
+                        <a class="nav-link active" href="#">Контакты</a>
                     </div>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
                         <button class="btn btn-outline-success me-2" type="submit">Найти</button>
                         <button type="button" class="btn btn-outline-light me-2">Вход</button>
-                        <button type="button" class="btn btn-outline-light me-2 active">Регистрация</button>
+                        <button type="button" class="btn btn-outline-light me-2">Регистрация</button>
                         <button type="button" class="btn btn-outline-light">Выход</button>
                     </form>
             </div>
             </div>
         </nav>
     </section>
-    
-    <section class="my-registration-form">
+    <section class="my-carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-color: #343a40!important">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Написать мне</h1>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="my-contact-form">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
@@ -45,35 +55,56 @@
                     <nav aria-label="breadcrumb" class="my-4">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Форма регистрации</li>
+                            <li class="breadcrumb-item active" aria-current="page">Форма обратной связи</li>
                         </ol>
                     </nav>
-                    
                     <div class="row justify-content-center">
                         <div class="col-6">
-                            <p class="lead">Для регистрации укажите имя пользователя и пароль</p>
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="inputUsername" class="form-label visually-hidden">Имя пользователя</label>
-                                        <input type="username" class="form-control" id="inputUsername" aria-describedby="userName" placeholder="Имя пользователя">
+                            <p class="lead">Чтобы связаться со мной заполните форму обратной связи</p>
+                            <form name="contact-form" action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <label for="name" class="visually-hidden">Ваше имя</label>
+                                            <input type="text" id="name" class="form-control" placeholder="Ваше имя">
+                                        </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="inputPassword" class="form-label visually-hidden">Пароль</label>
-                                        <input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <label for="email" class="visually-hidden">Ваша почта</label>
+                                            <input type="text" id="email" class="form-control" placeholder="Ваша почта">
+                                        </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="ReInputPassword" class="form-label visually-hidden">Повторите пароль</label>
-                                        <input type="password" class="form-control" id="ReInputPassword" placeholder="Повторите пароль">
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <label for="subject" class="visually-hidden">Тема</label>
+                                            <input type="text" id="subject" class="form-control" placeholder="Тема">
+                                        </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Регистрация</button>
-                                </form>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <label for="message" class="visually-hidden">Ваше сообщение</label>
+                                            <textarea type="text" id="message" rows="2" class="form-control md-textarea" placeholder="Ваше сообщение"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="text-center text-md-start my-3">
+                                <button class="btn btn-primary" type="submit">Отправить</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="my-footer mt-3">
+    <section class="my-footer">
         <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
             <symbol id="python" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
